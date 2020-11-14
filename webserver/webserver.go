@@ -40,22 +40,22 @@ func ping(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Alive!")
 }
 
-// SetConfig
+//SetConfig ...
 func SetConfig(fileDir string) {
 	config.fileDir = fileDir
 }
 
-// ServerUrl
+//ServerUrl ...
 func Url() string {
 	return serverUrl
 }
 
-// IsRunning
+//IsRunning ...
 func IsRunning() bool {
 	return config.isRunning
 }
 
-// Start
+//Start ...
 func Start() (string, error) {
 	if config.isRunning {
 		return serverUrl, nil
@@ -93,7 +93,7 @@ func Start() (string, error) {
 	return serverUrl, nil
 }
 
-// Stop
+//Stop ..
 func Stop() {
 	log.Printf("Stopping server...")
 	config.isRunning = false

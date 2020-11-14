@@ -1,6 +1,6 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/hemantasapkota/react-native-webserver)](https://goreportcard.com/report/github.com/hemantasapkota/react-native-webserver)
 
-# react-native-web-server
+# react-native-webserver
 An embeddable dynamic web-server backed by Golang for React Native apps ( IOS & Android ).
 
 ![](https://s3.amazonaws.com/battousai/ReactNativeWebServer.gif)

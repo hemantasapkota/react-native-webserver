@@ -1,8 +1,0 @@
-framework module "Webserver" {
-	header "ref.h"
-    header "Webserver.objc.h"
-    header "Universe.objc.h"
-    header "Webserver.h"
-
-    export *
-}

@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-IOS_DEST=../ios/MyApp/AppWebServer/
+IOS_DEST=../ios/ReactNativeWebServer/AppWebServer/
 IOS_FRAMEWORK_FILE=WebServer.framework
 
 ANDROID_DEST=../android/app/libs/

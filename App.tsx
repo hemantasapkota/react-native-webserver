@@ -1,22 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Alert,
   NativeModules,
   SafeAreaView,
-  StatusBar,
   StyleSheet,
-  TouchableOpacity,
 } from 'react-native';
-import {WebView} from 'react-native-webview';
+import { WebView } from 'react-native-webview';
 import AppServerStatusBar from './AppServerStatusBar';
 
 var RNFS = require('react-native-fs');
 
 const AppWebServer = NativeModules.AppWebServer;
-
-const IS_ANDROID = Platform.OS === 'android';
-const IS_IOS = Platform.OS == 'ios';
 
 interface State {
   serverRunning: boolean;
@@ -73,7 +68,7 @@ const App = () => {
         <View style={styles.webViewContainer}>
           <WebView
             style={styles.webview}
-            source={{uri: state.serverRunning ? state.pingUrl : undefined}}
+            source={{ uri: state.serverRunning ? state.pingUrl : undefined }}
           />
         </View>
       </SafeAreaView>

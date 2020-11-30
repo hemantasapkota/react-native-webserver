@@ -1,12 +1,12 @@
 import React from 'react';
-import {Text, TouchableHighlight, StyleSheet, View} from 'react-native';
+import { Text, TouchableHighlight, StyleSheet, View } from 'react-native';
 
 interface Props {
   onPress: Function;
   serverRunning: boolean;
 }
 
-const AppServerStatusBar: React.FC<Props> = ({serverRunning, onPress}) => {
+const AppServerStatusBar: React.FC<Props> = ({ serverRunning, onPress }) => {
   return (
     <View>
       <TouchableHighlight style={styles.serverStatusBar} onPress={onPress}>
